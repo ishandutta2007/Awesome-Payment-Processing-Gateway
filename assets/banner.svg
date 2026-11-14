@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#080d1a" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+    </pattern>
+
+    <!-- Filter for Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.04); }
+    }
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0px) rotate(-3deg); }
+      50% { transform: translateY(-12px) rotate(-1deg); }
+    }
+    @keyframes pulseDot {
+      0%, 100% { r: 3.5px; opacity: 0.6; }
+      50% { r: 6px; opacity: 1; }
+    }
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .ambient-glow {
+      animation: pulseGlow 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .floating-card {
+      animation: floatCard 7s ease-in-out infinite;
+      transform-origin: 980px 180px;
+    }
+    .pulsing-dot {
+      animation: pulseDot 2.5s ease-in-out infinite;
+    }
+    .dynamic-flow {
+      stroke-dasharray: 20, 10;
+      animation: flowLine 14s linear infinite;
+    }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+    .sub-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 400;
+    }
+    .badge-text {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      font-weight: 600;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="url(#grid)" />
+
+  <!-- Dynamic Ambient Glow Spots (Background layer) -->
+  <circle cx="200" cy="80" r="140" fill="#6366f1" opacity="0.2" filter="url(#glow)" class="ambient-glow" />
+  <circle cx="1020" cy="180" r="160" fill="#06b6d4" opacity="0.18" filter="url(#glow)" class="ambient-glow" style="animation-delay: -3s;" />
+  <circle cx="650" cy="320" r="130" fill="#a855f7" opacity="0.15" filter="url(#glow)" class="ambient-glow" style="animation-delay: -1.5s;" />
+
+  <!-- Dynamic Flowing Circuit / Network Lines (Behind Foreground Content) -->
+  <g opacity="0.45">
+    <path d="M 0,220 Q 300,280 600,190 T 1200,160" fill="none" stroke="url(#primaryGlow)" stroke-width="2.5" class="dynamic-flow" />
+    <path d="M 0,260 Q 400,180 800,240 T 1200,200" fill="none" stroke="#6366f1" stroke-width="1.5" class="dynamic-flow" style="animation-duration: 20s;" />
+    <circle cx="300" cy="245" r="4" fill="#06b6d4" class="pulsing-dot" />
+    <circle cx="600" cy="190" r="5" fill="#a855f7" class="pulsing-dot" style="animation-delay: -1s;" />
+    <circle cx="850" cy="235" r="4.5" fill="#38bdf8" class="pulsing-dot" style="animation-delay: -1.8s;" />
+  </g>
+
+  <!-- Animated Decorative Credit / Payment Card Graphic (Right side) -->
+  <g class="floating-card" filter="url(#cardShadow)">
+    <g transform="translate(860, 75) rotate(4)">
+      <!-- Main Glass Card -->
+      <rect width="250" height="155" rx="16" fill="url(#cardGrad)" stroke="#475569" stroke-width="1.5" />
+      <rect width="250" height="155" rx="16" fill="none" stroke="url(#primaryGlow)" stroke-width="1.2" opacity="0.7" />
+      
+      <!-- Card EMV Chip -->
+      <rect x="25" y="42" width="36" height="28" rx="6" fill="url(#chipGrad)" />
+      <line x1="25" y1="56" x2="61" y2="56" stroke="#92400e" stroke-width="1" />
+      <line x1="43" y1="42" x2="43" y2="70" stroke="#92400e" stroke-width="1" />
+
+      <!-- Contactless Wave Icon -->
+      <path d="M 75,50 A 10 10 0 0 1 75,64" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+      <path d="M 80,45 A 16 16 0 0 1 80,69" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+      <path d="M 85,40 A 22 22 0 0 1 85,74" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+
+      <!-- Card Number Dots & Expiry -->
+      <text x="25" y="105" fill="#94a3b8" font-family="monospace" font-size="12" letter-spacing="3">•••• •••• •••• 8842</text>
+      <text x="25" y="132" fill="#64748b" font-family="monospace" font-size="9">VALID THRU 12/28</text>
+
+      <!-- Dynamic Mini Hologram / Dual Circle Logo -->
+      <circle cx="195" cy="122" r="15" fill="#ef4444" opacity="0.85" />
+      <circle cx="212" cy="122" r="15" fill="#f59e0b" opacity="0.85" />
+    </g>
+  </g>
+
+  <!-- Foreground Content: Header Tag, Title, Subtitle & Interactive Feature Pills -->
+  <g transform="translate(70, 0)">
+    <!-- Top Pill Tag -->
+    <g transform="translate(0, 52)">
+      <rect width="240" height="28" rx="14" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+      <circle cx="15" cy="14" r="5" fill="#10b981" class="pulsing-dot" />
+      <text x="28" y="18" fill="#a5b4fc" class="badge-text" letter-spacing="0.5">CURATED DEVELOPER ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="135" fill="#ffffff" class="title-text" font-size="44">
+      Awesome <tspan fill="url(#primaryGlow)">Payment Gateway</tspan>
+    </text>
+
+    <!-- Subtitle Description -->
+    <text x="0" y="172" fill="#94a3b8" class="sub-text" font-size="16.5">
+      The authoritative index of payment processors, multi-PSP routing orchestrators,
+    </text>
+    <text x="0" y="196" fill="#94a3b8" class="sub-text" font-size="16.5">
+      subscription metering engines, crypto rails, and enterprise billing infrastructure.
+    </text>
+
+    <!-- Key Capability Pills / Tags -->
+    <g transform="translate(0, 240)">
+      <!-- Pill 1: Multi-PSP Orchestration -->
+      <g transform="translate(0, 0)">
+        <rect width="185" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="4" fill="#38bdf8" />
+        <text x="30" y="22" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12.5" font-weight="600">Smart PSP Routing</text>
+      </g>
+
+      <!-- Pill 2: Subscription Billing -->
+      <g transform="translate(195, 0)">
+        <rect width="180" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="4" fill="#a855f7" />
+        <text x="30" y="22" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12.5" font-weight="600">Subscription &amp; Usage</text>
+      </g>
+
+      <!-- Pill 3: Non-Custodial Crypto -->
+      <g transform="translate(385, 0)">
+        <rect width="175" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="4" fill="#f59e0b" />
+        <text x="30" y="22" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12.5" font-weight="600">Crypto &amp; Stablecoins</text>
+      </g>
+
+      <!-- Pill 4: Open-Source First -->
+      <g transform="translate(570, 0)">
+        <rect width="155" height="36" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.2" />
+        <circle cx="18" cy="18" r="4" fill="#10b981" />
+        <text x="30" y="22" fill="#e2e8f0" font-family="-apple-system, sans-serif" font-size="12.5" font-weight="600">Self-Hostable APIs</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Subtle Bottom Highlight Bar -->
+  <rect x="0" y="356" width="1200" height="4" rx="2" fill="url(#primaryGlow)" />
+</svg>
