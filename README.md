@@ -81,126 +81,126 @@ Self-hosted payment gateways, multi-processor routing orchestrators, and subscri
 Repositories are listed in descending order by GitHub stargazers count:
 
 ### 🦀 Hyperswitch
-[![GitHub stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers)
 * **Stack:** 🦀 Rust | **License:** 📄 Apache-2.0
 * **Repository:** [juspay/hyperswitch](https://github.com/juspay/hyperswitch)
 * Hyperswitch (developed by Juspay) is a leading open-source payment orchestration engine written in Rust. It aggregates 50+ payment providers, card networks, and local wallets through a unified API. It delivers smart dynamic routing, automatic smart retries, payment dispute management, cost observability, and PCI-DSS compliant vault tokenization.
 * **Best for:** 🛍️ High-volume e-commerce and SaaS platforms routing across multiple PSPs to optimize authorization rates and lower transaction costs.
 
 ### 🌊 Lago
-[![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
 * **Stack:** 💎 Ruby / 🐹 Go / 🐘 PostgreSQL / 🔴 Redis | **License:** 📄 AGPL-3.0
 * **Repository:** [getlago/lago](https://github.com/getlago/lago)
 * Lago is an open-source metering and usage-based billing platform designed as an alternative to Chargebee and Stripe Billing. It ingests high-frequency usage events, computes billable metrics, administers subscription life cycles, and generates invoices that are automatically collected via gateways like Stripe, Adyen, and GoCardless.
 * **Best for:** 🤖 Developer tools, API services, and AI businesses operating on usage-based or hybrid subscription monetization models.
 
 ### ❄️ Polar
-[![GitHub stars](https://img.shields.io/github/stars/polarsource/polar?style=social&color=white)](https://github.com/polarsource/polar/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/polarsource/polar?style=social&color=white)](https://github.com/polarsource/polar/stargazers)
 * **Stack:** 🐍 Python / ⚡ FastAPI / ⚛️ Next.js / 🐘 PostgreSQL | **License:** 📄 Apache-2.0
 * **Repository:** [polarsource/polar](https://github.com/polarsource/polar)
 * Polar is an open-source Merchant of Record and payment infrastructure platform built specifically for digital products, developer tools, and SaaS software. It provides out-of-the-box merchant checkout, automatic sales tax calculation, file delivery, digital license keys, and Discord/GitHub repository access perks.
 * **Best for:** 📦 Developers and open-source creators selling digital software, licenses, digital downloads, and tiered SaaS memberships.
 
 ### ⚡ BTCPay Server
-[![GitHub stars](https://img.shields.io/github/stars/btcpayserver/btcpayserver?style=social&color=white)](https://github.com/btcpayserver/btcpayserver/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/btcpayserver/btcpayserver?style=social&color=white)](https://github.com/btcpayserver/btcpayserver/stargazers)
 * **Stack:** 🔷 C# / .NET / 🐘 PostgreSQL | **License:** 📄 MIT
 * **Repository:** [btcpayserver/btcpayserver](https://github.com/btcpayserver/btcpayserver)
 * BTCPay Server is the premier self-hosted, non-custodial cryptocurrency payment processor. It enables merchants to accept Bitcoin on-chain and via the Lightning Network with 0% transaction fees and zero intermediary custody. It features integrated checkout apps, Point of Sale terminals, crowdfunding apps, and e-commerce plugins for WooCommerce and Shopify.
 * **Best for:** 🪙 Merchants and platforms desiring direct, non-custodial Bitcoin and Lightning payment acceptance without third-party fees.
 
 ### 🐘 Omnipay
-[![GitHub stars](https://img.shields.io/github/stars/thephpleague/omnipay?style=social&color=white)](https://github.com/thephpleague/omnipay/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/thephpleague/omnipay?style=social&color=white)](https://github.com/thephpleague/omnipay/stargazers)
 * **Stack:** 🐘 PHP | **License:** 📄 MIT
 * **Repository:** [thephpleague/omnipay](https://github.com/thephpleague/omnipay)
 * Omnipay is a framework-agnostic payment processing library for PHP. It provides a standardized API surface across dozens of disparate payment gateway providers, allowing web applications to switch processors or add multi-gateway checkouts with minimal code changes.
 * **Best for:** 🌐 PHP web applications, Laravel apps, and legacy enterprise e-commerce systems needing a multi-gateway abstraction layer.
 
 ### ⚔️ Kill Bill
-[![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
 * **Stack:** ☕ Java / 🐬 MySQL / 🐘 PostgreSQL | **License:** 📄 Apache-2.0
 * **Repository:** [killbill/killbill](https://github.com/killbill/killbill)
 * Kill Bill is an enterprise-grade open-source subscription billing and payments platform. Operating in production since 2010, it manages subscription lifecycles, complex invoice generation, hierarchical accounts, and recurring payment execution through pluggable gateways (Stripe, Adyen, Braintree, CyberSource).
 * **Best for:** 🏢 Enterprises needing self-hosted subscription billing infrastructure, multi-tenant billing partitions, and full ownership of financial data.
 
 ### 💎 Active Merchant
-[![GitHub stars](https://img.shields.io/github/stars/activemerchant/active_merchant?style=social&color=white)](https://github.com/activemerchant/active_merchant/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/activemerchant/active_merchant?style=social&color=white)](https://github.com/activemerchant/active_merchant/stargazers)
 * **Stack:** 💎 Ruby | **License:** 📄 MIT
 * **Repository:** [activemerchant/active_merchant](https://github.com/activemerchant/active_merchant)
 * Extracted originally from Shopify's core payment engine, Active Merchant is a Ruby payment abstraction library. It exposes a unified API to communicate with over 100 payment gateways, simplifying credit card authorizations, purchases, refunds, and recurring tokenization.
 * **Best for:** 🛒 Ruby on Rails e-commerce platforms requiring battle-tested card gateway integrations.
 
 ### 🇮🇳 YouPI-PG
-[![GitHub stars](https://img.shields.io/github/stars/youpi-pg/YouPI-PG?style=social&color=white)](https://github.com/youpi-pg/YouPI-PG/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/youpi-pg/YouPI-PG?style=social&color=white)](https://github.com/youpi-pg/YouPI-PG/stargazers)
 * **Stack:** 🟨 JavaScript / 🟢 Node.js | **License:** 📄 Open Source
 * **Repository:** [youpi-pg/YouPI-PG](https://github.com/youpi-pg/YouPI-PG)
 * YouPI-PG is a self-hosted UPI and Cash-on-Delivery payment gateway engineered for zero per-transaction platform fees. It supports universal JavaScript checkout integration, dynamic QR payments, WhatsApp OTP authentication, and automated payment verification hooks.
 * **Best for:** 📱 Indian merchants and digital storefronts aiming to eliminate intermediary gateway commission fees on UPI transactions.
 
 ### 🧩 Payum
-[![GitHub stars](https://img.shields.io/github/stars/Payum/Payum?style=social&color=white)](https://github.com/Payum/Payum/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Payum/Payum?style=social&color=white)](https://github.com/Payum/Payum/stargazers)
 * **Stack:** 🐘 PHP | **License:** 📄 MIT
 * **Repository:** [Payum/Payum](https://github.com/Payum/Payum)
 * Payum is an extensible PHP payment processing framework covering credit card processing, offsite purchasing, recurring subscriptions, and payout orchestration across popular merchant providers like PayPal, Stripe, Klarna, and Authorize.Net.
 * **Best for:** 🛠️ Symfony and PHP web engineering teams building custom payment architectures.
 
 ### 🛡️ USDT-Payment-Gateway
-[![GitHub stars](https://img.shields.io/github/stars/DigitalShieldOfficial/USDT-Payment-Gateway?style=social&color=white)](https://github.com/DigitalShieldOfficial/USDT-Payment-Gateway/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/DigitalShieldOfficial/USDT-Payment-Gateway?style=social&color=white)](https://github.com/DigitalShieldOfficial/USDT-Payment-Gateway/stargazers)
 * **Stack:** 🐹 Go / 🟨 JavaScript | **License:** 📄 Open Source
 * **Repository:** [DigitalShieldOfficial/USDT-Payment-Gateway](https://github.com/DigitalShieldOfficial/USDT-Payment-Gateway)
 * A lightweight, self-hosted USDT and USDC payment gateway offering multi-chain verification (TRC-20, ERC-20, BSC), merchant SDK integration guides, automatic deposit polling, and webhook notifications.
 * **Best for:** 💵 Cross-border e-commerce merchants accepting stablecoins on Tron and Ethereum networks with zero intermediary escrow fees.
 
 ### 🔮 Hyperswitch Prism
-[![GitHub stars](https://img.shields.io/github/stars/juspay/hyperswitch-prism?style=social&color=white)](https://github.com/juspay/hyperswitch-prism/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/juspay/hyperswitch-prism?style=social&color=white)](https://github.com/juspay/hyperswitch-prism/stargazers)
 * **Stack:** 🦀 Rust / 🔷 TypeScript | **License:** 📄 Apache-2.0
 * **Repository:** [juspay/hyperswitch-prism](https://github.com/juspay/hyperswitch-prism)
 * Prism is Hyperswitch's lightweight multi-processor SDK and translation protocol. It allows applications to interface with dozens of global payment processors through uniform client and server interfaces.
 * **Best for:** 🔌 Developers looking for a lightweight SDK library to integrate multiple payment rails into microservices without deploying a full orchestration cluster.
 
 ### 🛒 Bitcart
-[![GitHub stars](https://img.shields.io/github/stars/bitcart/bitcart?style=social&color=white)](https://github.com/bitcart/bitcart/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/bitcart/bitcart?style=social&color=white)](https://github.com/bitcart/bitcart/stargazers)
 * **Stack:** 🐍 Python / 💚 Vue.js / 🐳 Docker | **License:** 📄 MIT
 * **Repository:** [bitcart/bitcart](https://github.com/bitcart/bitcart)
 * Bitcart is a self-hosted, non-custodial multi-cryptocurrency payment processor supporting BTC, LTC, BCH, XMR, ETH, TRX, and USDT. It provides merchant administration interfaces, dynamic POS terminals, turnkey Docker packaging, and an extensive OpenAPI REST specification.
 * **Best for:** 🪙 Merchants accepting diverse altcoins and privacy coins with a Python-based self-hosted stack.
 
 ### 🐍 Merchant (Django)
-[![GitHub stars](https://img.shields.io/github/stars/agiliq/merchant?style=social&color=white)](https://github.com/agiliq/merchant/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/agiliq/merchant?style=social&color=white)](https://github.com/agiliq/merchant/stargazers)
 * **Stack:** 🐍 Python / 🎸 Django | **License:** 📄 BSD-3-Clause
 * **Repository:** [agiliq/merchant](https://github.com/agiliq/merchant)
 * A pluggable Django application providing modular backend adapters to accept and manage payments across diverse processors like Stripe, PayPal, Authorize.Net, and eWAY.
 * **Best for:** 🐍 Django web applications integrating payment checkout flows into existing relational models.
 
 ### 🏰 SHKeeper
-[![GitHub stars](https://img.shields.io/github/stars/vsys-host/shkeeper.io?style=social&color=white)](https://github.com/vsys-host/shkeeper.io/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/vsys-host/shkeeper.io?style=social&color=white)](https://github.com/vsys-host/shkeeper.io/stargazers)
 * **Stack:** 🐍 Python / 🐳 Docker | **License:** 📄 MIT
 * **Repository:** [vsys-host/shkeeper.io](https://github.com/vsys-host/shkeeper.io)
 * SHKeeper is an open-source, non-custodial crypto payment gateway that connects directly to full nodes or lightweight wallets. It integrates with e-commerce CMS systems (WooCommerce, OpenCart) to receive automated crypto payments without transaction cuts.
 * **Best for:** 🛍️ Independent online shops and e-commerce webmasters accepting direct crypto payments.
 
 ### 🌐 Zoneless
-[![GitHub stars](https://img.shields.io/github/stars/zonelessdev/zoneless?style=social&color=white)](https://github.com/zonelessdev/zoneless/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/zonelessdev/zoneless?style=social&color=white)](https://github.com/zonelessdev/zoneless/stargazers)
 * **Stack:** 🔷 TypeScript / 🟢 Node.js | **License:** 📄 Apache-2.0
 * **Repository:** [zonelessdev/zoneless](https://github.com/zonelessdev/zoneless)
 * Zoneless is an open-source Stripe alternative for stablecoins. It offers hosted checkout, recurring subscriptions, and marketplace splits using a Stripe-compatible API interface on top of native blockchain rails.
 * **Best for:** ⛓️ Web3 and digital native projects seeking zero-commission stablecoin payments with familiar Stripe developer ergonomics.
 
 ### ☕ Open Payment Host
-[![GitHub stars](https://img.shields.io/github/stars/abishekmuthian/open-payment-host?style=social&color=white)](https://github.com/abishekmuthian/open-payment-host/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/abishekmuthian/open-payment-host?style=social&color=white)](https://github.com/abishekmuthian/open-payment-host/stargazers)
 * **Stack:** 🐹 Go / 🗄️ SQLite / 🎨 Tailwind | **License:** 📄 AGPL-3.0
 * **Repository:** [abishekmuthian/open-payment-host](https://github.com/abishekmuthian/open-payment-host)
 * A self-hosted creator monetization and digital storefront platform alternative to Gumroad and Buy Me a Coffee. It interfaces directly with Stripe, PayPal, Razorpay, and Square with support for localized purchasing power parity pricing and secure digital file delivery.
 * **Best for:** 🎨 Independent creators, course authors, and digital artists seeking direct payments without third-party marketplace fees.
 
 ### 🚀 GoiPay
-[![GitHub stars](https://img.shields.io/github/stars/goipay/goipay?style=social&color=white)](https://github.com/goipay/goipay/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/goipay/goipay?style=social&color=white)](https://github.com/goipay/goipay/stargazers)
 * **Stack:** 🐹 Go / ⚡ gRPC | **License:** 📄 MIT
 * **Repository:** [goipay/goipay](https://github.com/goipay/goipay)
 * A high-performance cryptocurrency payment processing microservice written in Go. It generates invoices and monitors settlement status via gRPC for BTC, XMR, ETH, LTC, and BEP-20 tokens.
 * **Best for:** 🛰️ Distributed microservices architectures requiring a lightweight, low-latency crypto payment verification daemon.
 
 ### 🏛️ TPT Pay
-[![GitHub stars](https://img.shields.io/github/stars/tpt-solutions/tpt-payments?style=social&color=white)](https://github.com/tpt-solutions/tpt-payments/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/tpt-solutions/tpt-payments?style=social&color=white)](https://github.com/tpt-solutions/tpt-payments/stargazers)
 * **Stack:** 🐹 Go / 🐘 PostgreSQL / 📬 NATS | **License:** 📄 MIT
 * **Repository:** [tpt-solutions/tpt-payments](https://github.com/tpt-solutions/tpt-payments)
 * TPT Pay is a self-hostable payment processing API featuring a Stripe API v2024-06-20 compatible interface, an append-only double-entry financial ledger, and pluggable Card Network adapters.
@@ -260,7 +260,7 @@ Contributions are warmly welcomed! To suggest a payment processing gateway, orch
 
 1. Fork this repository.
 2. Ensure the tool is production-tested, actively maintained, and provides open-source code or developer-accessible payment infrastructure.
-3. Add the project to the appropriate section in descending order of GitHub stars or valuation.
+3. Add the project to the appropriate section in descending order of GitHub_Stars or valuation.
 4. Submit a Pull Request with a clear description of the project and why it adds value to payment engineers.
 
 ---
